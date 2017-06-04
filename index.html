@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Movie Predictor</title>
+	<meta name="description" content="Movie Predictor">
+	<meta name="author" content="Philipp Reineke">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>04 June 2017</h3>
+  <h1>Movie Predictor</h1>
+
+<p>Reproducible Pitch for the Developing Data Science Coursera Class</p>
+
+</article>
+
+<article class="" id="slide-2" style="background:;">
+  <h3>The Problem</h3>
+  <p>Ever been so bored out of your mind that you had to resort to browsing youtube 
+and 9gag and related pages for relief? Well, fear no more, thanks to modern
+machine learning technology, now there is now a better way to waste larger 
+chuncks of time in a much more qualitative fashion!</p>
+
+<p><img src="figure/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+</article>
+
+<article class="" id="slide-3" style="background:;">
+  <h3>The Solution</h3>
+  <p>My new movie prediction tool allows you to discover quality movies to watch, 
+after rating just 10 movies that you have watched before, offering hours of
+sweet unproductive bliss with barely any search up-front time.</p>
+
+<p>Just rate 10 movies and click &quot;Run Prediction!&quot; - and voila you get a whole list
+of ways to spend 2 hours happily lingering in front of your screen without so 
+moving a finger.</p>
+
+</article>
+
+<article class="" id="slide-4" style="background:;">
+  <h3>The How-I-Did-It</h3>
+  <p>This tool is based on a small share of the Netflix prize data. Based on the 
+great guide by <a href="http://blog.echen.me/2011/10/24/winning-the-netflix-prize-a-summary/">Edwin Chen</a> I created the following features:</p>
+
+<ul>
+<li>Normalized Global Effects Variables</li>
+<li>Temporal Effects</li>
+<li>A Neighborhood Model</li>
+<li>A Matrix Factorization Model</li>
+</ul>
+
+<p>I trained a model on 200.000 Ratings of 149,473 users on 79 movies. Why not all 100,000,000+ Ratings on all 17,000+ movies? Because that would have taken 
+half a year caluclation time.</p>
+
+</article>
+
+<article class="" id="slide-5" style="background:;">
+  <h3>The App</h3>
+  <iframe src = 'https://preineke.shinyapps.io/movie_predict/' height='600px'></iframe>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
